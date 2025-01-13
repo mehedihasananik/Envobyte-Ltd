@@ -1,0 +1,949 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+@import "./custom.css";
+@import "./mediaQueries.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: auto;
+  }
+  /* 
+  body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  } */
+  .disabled {
+    pointer-events: none;
+  }
+}
+@layer components {
+  .featureImageWrapper {
+    width: 100%;
+    max-width: 700px;
+    aspect-radio: 70/45;
+    margin: 2rem auto;
+  }
+  .btn {
+    @apply text-[14px] md:text-[16px] whitespace-nowrap px-4  py-2.5 md:px-10 md:py-4 font-[600] rounded-lg transition-all duration-300;
+  }
+
+  .btn {
+    @apply text-[14px] md:text-[16px] whitespace-nowrap px-4  py-2.5 md:px-10 md:py-4 font-[600] rounded-lg transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply text-white bg-[#FF693B] border border-[#FF693B] hover:bg-white hover:text-[#FF693B];
+  }
+
+  .btn-secondary {
+    @apply text-[#FF693B] border border-[#FF693B] hover:bg-[#FF693B] hover:text-white;
+  }
+  .btn-service {
+    @apply text-[14px] bg-[#FF693B] rounded-md px-8 py-[5px] text-white border border-[#ff693B] group-hover:bg-white group-hover:text-[#FF693B] transition-all duration-300;
+  }
+  .headings {
+    @apply text-headingBaseSmall md:text-headingMedium lg:text-headingLarge font-Raleway font-bold text-blackish;
+  }
+  .heading-space {
+    @apply mt-3 mb-3 md:mt-3 md:mb-5;
+  }
+  .combo_ServiceSwiper {
+    height: 460px !important;
+  }
+  .combo_portSwiper {
+    height: 420px !important;
+  }
+  .combo_mySwiper {
+    height: 480px !important;
+  }
+  .testimonial_mySwiper {
+    height: 480px !important;
+  }
+  .app_heading {
+    @apply text-headingBaseSmall md:text-[48px] text-gray-800 font-bold;
+  }
+  .app_space {
+    @apply py-3 md:py-0;
+  }
+
+  .custom-rotate {
+    background: linear-gradient(90deg, #2f4c9d 0%, #0a2c8c 100%);
+    /* filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.10)); */
+    clip-path: polygon(0 23%, 100% 14%, 100% 90%, 0 80%);
+    padding: 20px;
+    color: #fff;
+  }
+  .demo {
+    height: 200px !important;
+  }
+  .line-break {
+    display: block;
+    margin-bottom: 0.1em; /* Adjust the spacing as needed */
+  }
+
+  .service-sec {
+    padding: 10% 0 !important;
+  }
+
+  .portfolio-bgHover {
+    @apply group-hover:bg-[#FF693B]  transition-all duration-300;
+  }
+
+  .portfolio-textHover {
+    @apply group-hover:text-[#fff] transition-all duration-300;
+  }
+  .order_title {
+    @apply text-[#95979D] font-Raleway text-[16px] font-[600];
+  }
+
+  .cross-btn {
+    background: #fff !important;
+    color: black !important;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 45px !important;
+    width: 45px !important;
+  }
+
+  /* combo hero section starts */
+  .combo_title {
+    @apply text-[#0A2C8C] font-Inter text-[20px] md:text-[36px] lg:text-[48px] font-bold text-center pt-[2%] md:pt-[3%];
+  }
+  .combo_des {
+    @apply font-Inter text-[16px] text-[#6D758F] pt-[.5%] font-normal;
+  }
+  .bgheroBlur {
+    background-image: url("/assets/bgheroBlur.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center;
+    position: relative; /* For stacking content properly */
+    z-index: 1; /* Make sure content is above background */
+    height: 589px;
+    width: 333px;
+    overflow: visible; /* Ensure content can overflow outside the box */
+  }
+  .bgAnimatedCommon {
+    border-radius: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 26px -26px 20px 0px rgba(10, 44, 140, 0.2);
+    backdrop-filter: blur(11px);
+  }
+  .bgAnimatedCommonSm {
+    border-radius: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 26px -26px 20px 0px rgba(10, 44, 140, 0.2);
+    backdrop-filter: blur(11px);
+  }
+  .bgAnimatedKit {
+    border-radius: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 26px -26px 20px 0px rgba(10, 44, 140, 0.2),
+      26px 26px 20px 0px rgba(10, 44, 140, 0.2);
+    backdrop-filter: blur(11px);
+  }
+  .bgAnimatedAfterKit {
+    border-radius: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 26px 26px 20px 0px rgba(10, 44, 140, 0.2);
+    backdrop-filter: blur(11px);
+  }
+
+  .bgheroBlurContent {
+    background: #fff;
+    opacity: 0.8;
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    position: absolute;
+    inset: 0; /* Make sure it covers the entire parent */
+    z-index: -1; /* Ensure it's behind the content */
+  }
+  .smooth-scroll-container {
+    will-change: transform; /* Hint to browser for optimization */
+    transform: translateZ(0); /* Create a new stacking context */
+    backface-visibility: hidden; /* Reduce rendering artifacts */
+  }
+
+  .combo_hero {
+    background-image: url("/assets/Frame1.jpg");
+    background-color: #005ddd;
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+    background-position: center;
+    position: relative; /* Added to ensure proper z-index stacking */
+    z-index: 1; /* Adjusted z-index to ensure content is above background */
+    height: 850px;
+    width: 100%;
+    overflow: hidden; /* Prevent any overflow */
+  }
+  .contactusbg {
+    background-image: url("/assets/contactusbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+    background-position: center;
+    position: relative; /* Added to ensure proper z-index stacking */
+    z-index: 1; /* Adjusted z-index to ensure content is above background */
+    height: 650px;
+    width: 100%;
+    overflow: hidden; /* Prevent any overflow */
+  }
+  .youtube_vdoSection {
+    background-image: url("/assets/youtubeSection1.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+    background-position: center;
+    position: relative; /* Added to ensure proper z-index stacking */
+    z-index: -19; /* Adjusted z-index to ensure content is above background */
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent any overflow */
+  }
+  .pricing_bg {
+    width: 529px;
+    height: 234px;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+    border-radius: 529px;
+    background: rgba(255, 105, 59, 0.3);
+    filter: blur(157px);
+  }
+  .pricing_bg_blue {
+    width: 441px;
+    height: 366px;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+    border-radius: 441px;
+    background: rgba(92, 130, 255, 0.28);
+    filter: blur(122px);
+  }
+  /* .combo_heroService {
+    background-image: url("/assets/heroServicebg.png");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: 1;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+  } */
+  .comboDeals {
+    background-image: url("/assets/comboDeals.jpg");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -1;
+    height: 1730px;
+    width: 100%;
+  }
+  .container {
+    overflow: visible; /* Ensure it's not 'hidden' or 'auto' */
+    position: relative; /* Avoid 'fixed' positioning which might conflict */
+  }
+  .containerStats {
+    background-image: url("/assets/ContainerStats1.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* or contain, depending on your design */
+    background-position: center;
+    /* Remove z-index: -1 */
+  }
+  .businessTransformBg {
+    background-image: url("/assets/businessTransform.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust the size as needed */
+    background-position: center; /* Ensure it's positioned correctly */
+    position: relative; /* Relative positioning to allow absolute children */
+    height: 600px;
+    width: 100%;
+    z-index: 1; /* Background image is placed above bgGirl */
+    border-radius: 15px;
+  }
+  /* .showcase_section {
+    background-image: url("/assets/comboDeals.jpg");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -1;
+    height: 1400px;
+    width: 100%;
+  } */
+
+  .bgGirl {
+    background-image: url("/assets/girl.png");
+    background-repeat: no-repeat;
+    background-size: auto; /* Or cover, depending on the desired effect */
+    background-position: center; /* Adjust the positioning */
+    position: absolute; /* Absolute positioning to place it behind */
+    z-index: -1; /* This ensures it stays behind the background */
+    height: 100%; /* Ensure it fills the container */
+    width: 100%; /* Ensure it fills the container */
+    top: 0; /* Position at the top of the container */
+    left: -400px; /* Position at the left of the container */
+  }
+
+  /* .overbgcombo {
+    background-image: url("/assets/overbgcombo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    z-index: -1;
+    height: 1600px;
+    width: 100%;
+  } */
+  /* .faqBg {
+    background-image: url("/assets/faqBookbg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    z-index: -1;
+    height: 750px;
+    width: 100%;
+  } */
+
+  .appointmentBg {
+    background-image: url("/assets/myappoinment.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+  }
+  /* .brand_shadow {
+    font-size: 22px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  } */
+
+  /* combo hero section end */
+
+  .state_bg {
+    background-image: url("/assets/Container Stats.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    height: 150px;
+    width: 100%;
+  }
+  .whyChoseUS_one {
+    background-image: url("/assets/why1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    height: 300px;
+    width: 100%;
+  }
+  .whyChoseUS_two {
+    background-image: url("/assets/why2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    height: 300px;
+    width: 100%;
+  }
+  .service_section {
+    background-image: url("/assets/servicePageBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    z-index: -1;
+    width: 100%;
+  }
+  .notfound {
+    background-image: url("/assets/Login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+  }
+
+  input::placeholder {
+    color: #c1c1c1;
+  }
+  .login_singUp {
+    background-image: url("/assets/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .active {
+    color: red;
+  }
+
+  /* slider pop up */
+
+  .swiper-slide-container {
+    position: relative;
+  }
+  .exploreSwiper {
+  }
+
+  .swiper-slide-image {
+    cursor: pointer;
+  }
+
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .popup-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /*------------- for swipper ----------- */
+
+  .image-gallery-thumbnail .image-gallery-thumbnail-image {
+    vertical-align: middle;
+    width: 100%;
+    line-height: 0;
+    border-radius: 10px !important;
+  }
+  swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*------------- for swipper ----------- */
+
+  .custom-margin {
+    margin-left: 0% !important;
+  }
+  .no-margin {
+    margin-left: 10% !important;
+  }
+  .no-margin2 {
+    margin-left: 5% !important;
+  }
+}
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  -webkit-appearance: none;
+}
+
+/* smooth scroll */
+.custom-link {
+  color: blue !important;
+  background-color: transparent !important;
+}
+.custom-link:hover {
+  color: blue !important;
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+/* html.has-scroll-smooth {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+[data-scroll-container] {
+  min-height: 100vh;
+  transform-style: preserve-3d;
+  perspective: 1px;
+}
+
+.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge, and Opera */
+}
+/* for app */
+.app_contact {
+  background-image: url("/assets/app_contact.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -1;
+  height: 700px;
+  width: 100%;
+}
+.all-offer-section {
+  background-image: url("/assets/AllOffer1.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: auto;
+  width: 100%;
+}
+
+.businessConsultingHero {
+  background-image: url("/assets/BusinessConsultingHero.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -1;
+  height: 800px;
+  width: 100%;
+}
+
+.app_heroSection {
+  background-image: url("/assets/app_heroSection.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  height: 995px;
+  width: 100%;
+  background-color: #001656;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.engine {
+  background-image: url("/assets/enginen.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  /* right: 210px;
+  bottom: -5px; */
+  width: 300px; /* Adjust size as needed */
+  height: 250px;
+  z-index: 0;
+  animation: spin 8s linear infinite; /* Adjust duration for speed */
+}
+.consulting_engine {
+  background-image: url("/assets/consulting_engine.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  z-index: 1; /* Ensures it's above the image */
+  animation: spins 8s linear infinite; /* Adjust duration for spin */
+}
+
+@keyframes spins {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* animation */
+.parallax-section {
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-bg {
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.floating-element {
+  will-change: transform;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.elegant-reveal {
+  overflow: hidden;
+}
+
+.reveal-element {
+  will-change: transform, opacity;
+}
+
+/* view_design */
+.view_design {
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6);
+  animation-name: subtle-glow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes subtle-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+      0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1),
+      0 0 12px rgba(255, 255, 255, 0.8);
+  }
+}
+/* for sales section */
+
+.sales_hero {
+  background-image: url("/assets/salesHero.jpg");
+  background-color: #005ddd;
+  background-repeat: no-repeat;
+  background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+  background-position: center;
+  position: relative; /* Added to ensure proper z-index stacking */
+  z-index: 1; /* Adjusted z-index to ensure content is above background */
+  height: 975px;
+  width: 100%;
+  overflow: hidden; /* Prevent any overflow */
+}
+.salesAllOne {
+  background-image: url("/assets/salesAllOneN.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: 11;
+  height: 720px;
+  width: 100%;
+  position: relative;
+  background-color: #051761;
+}
+.sales_video {
+  background-image: url("/assets/sales_video3.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: 738px;
+  width: 100%;
+}
+
+.websiteComboOffer {
+  background-image: url("/assets/websiteComboOffer1.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: 1017px;
+  width: 100%;
+}
+.anserSection {
+  background-image: url("/assets/anserSection.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: 897px;
+  width: 100%;
+}
+.Sales-Pricing-section {
+  background-image: url("/assets/salesPricing1.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: 1016px;
+  width: 100%;
+}
+.SaleClients_Section {
+  background-image: url("/assets/SaleClients_Section2.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: 904px;
+  width: 100%;
+}
+.sale-faq-section {
+  background-image: url("/assets/sale-faq-section.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: 1104px;
+  width: 100%;
+}
+/* In your CSS file (e.g., styles.css) */
+.plan-card-dark::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at top right,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 1; /* Added to ensure visibility */
+}
+
+/* Also add this to ensure the content appears above the pseudo-element */
+.plan-card-dark {
+  position: relative;
+  isolation: isolate;
+}
+
+.plan-card-dark > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* .statsbg {
+  background-image: url("/assets/statsbg.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  z-index: -11;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* for slider */
+.client_mySwiper {
+  height: 580px !important;
+}
+
+/* new sales animation  */
+.sales_hero1 {
+  background-image: url("/assets/salesHero11.png");
+  background-color: #005ddd;
+  background-repeat: no-repeat;
+  background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+  background-position: center;
+  position: relative; /* Added to ensure proper z-index stacking */
+  z-index: 1; /* Adjusted z-index to ensure content is above background */
+  height: 975px;
+  width: 100%;
+  overflow: hidden; /* Prevent any overflow */
+}
+.sales_hero2 {
+  background-image: url("/assets/salesHero12.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+  background-position: center;
+  position: absolute; /* Added to ensure proper z-index stacking */
+  z-index: -1; /* Adjusted z-index to ensure content is above background */
+  height: 647px;
+  width: 100%;
+  bottom: -190px;
+}
+.sales_hero3 {
+  background-image: url("/assets/salesHero13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 10;
+  height: 564px;
+  width: 100%;
+  bottom: -158px;
+}
+.sales_hero4 {
+  background-image: url("/assets/salesHero14.png");
+  background-repeat: no-repeat;
+  position: absolute; /* Added to ensure proper z-index stacking */
+  z-index: 10; /* Adjusted z-index to ensure content is above background */
+  height: 590px;
+  width: 100%;
+  bottom: -300px;
+}
+
+/* animate  */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sales_doll {
+  background-image: url("/assets/sales_doll.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  height: 328px;
+  width: 258px;
+  bottom: 305px;
+  animation: slideInFromLeft 2.5s ease-out;
+}
+
+@keyframes slideDownToPosition {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sales_moon {
+  background-image: url("/assets/sales_moon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -2;
+  height: 700px;
+  width: 700px;
+  bottom: 150px;
+  right: 70px;
+  animation: slideDownToPosition 2.5s ease-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sales_doll2 {
+  background-image: url("/assets/sales_doll2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  height: 259px;
+  width: 238px;
+  bottom: 239px;
+  right: 195px;
+  animation: slideUp 2.5s ease-out;
+}
+
+.sales_title {
+  background-image: url("/assets/sales_title.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  height: 671px;
+  width: 685px;
+  bottom: 42px;
+  right: 110px;
+  animation: slideUp 2.5s ease-out;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.panda-animation {
+  animation: slideIn 1.5s ease-in-out;
+}

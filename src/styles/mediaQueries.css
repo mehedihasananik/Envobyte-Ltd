@@ -1,0 +1,487 @@
+@media only screen and (max-width: 2500px) {
+  .image-gallery-left-nav .image-gallery-svg,
+  .image-gallery-right-nav .image-gallery-svg {
+    height: 50px !important;
+    width: 50px !important;
+    background: #fff !important;
+    color: black;
+    border-radius: 100%;
+  }
+  /* .image-gallery-left-nav {
+    left: -1vw !important;
+  }
+  .image-gallery-right-nav {
+    right: -3vw !important;
+  } */
+  .mySwiper_serviceSlider {
+    height: 591px !important;
+  }
+  .mySwiper_blogSlider {
+    height: 450px !important;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .app_heroSection {
+    height: 115vh;
+  }
+}
+
+@media only screen and (max-width: 1499px) {
+  .custom-margin {
+    margin-left: 0% !important;
+  }
+  .no-margin {
+    margin-left: 0% !important;
+  }
+  .no-margin2 {
+    margin-left: 0% !important;
+  }
+  .engine {
+    background-image: url("/assets/enginen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    /* right: 46%;
+    bottom: -50%; */
+    width: 30%; /* Adjust size as needed */
+    height: 100%;
+    z-index: 0;
+    animation: spin 8s linear infinite; /* Adjust duration for speed */
+  }
+  .sales_moon {
+    right: -55px;
+  }
+  .sales_title {
+    height: 515px;
+    width: 684px;
+    bottom: 196px;
+    right: -6px;
+  }
+  .sales_doll {
+    height: 328px;
+    width: 100%;
+    bottom: 305px;
+    animation: slideInFromLeft 2.5s ease-out;
+    left: -40px;
+  }
+  .sales_doll2 {
+    height: 259px;
+    width: 238px;
+    bottom: 239px;
+    right: 76px;
+  }
+}
+@media only screen and (max-width: 1369px) {
+  .pricing_bg {
+    background-image: url("/assets/pricingBg.png");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+  .businessConsultingHero {
+    background-image: url("/assets/BusinessConsultingHero.png");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+  }
+  .sales_moon {
+    right: -55px;
+  }
+  .sales_title {
+    height: 515px;
+    width: 684px;
+    bottom: 196px;
+    right: -6px;
+  }
+  .sales_doll {
+    height: 328px;
+    width: 100%;
+    bottom: 305px;
+    animation: slideInFromLeft 2.5s ease-out;
+    left: -40px;
+  }
+  .sales_doll2 {
+    height: 259px;
+    width: 238px;
+    bottom: 239px;
+    right: 76px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .combo_hero {
+    background-image: url("/assets/Frame1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+    background-position: center;
+    position: relative; /* Added to ensure proper z-index stacking */
+    z-index: 1; /* Adjusted z-index to ensure content is above background */
+    height: 1100px;
+    width: 100%;
+    overflow: hidden; /* Prevent any overflow */
+  }
+  .sales_hero {
+    background-image: url("/assets/salesHerosm.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+    background-position: center;
+    position: relative; /* Added to ensure proper z-index stacking */
+    z-index: 1; /* Adjusted z-index to ensure content is above background */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /* Prevent any overflow */
+  }
+  .Sales-Pricing-section {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -11;
+    height: 100%;
+    width: 100%;
+    background-color: #061964;
+  }
+  .anserSection {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -11;
+    height: 100%;
+    width: 100%;
+  }
+  .sale-faq-section {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -11;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .app_contact {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .image-gallery-left-nav .image-gallery-svg,
+  .image-gallery-right-nav .image-gallery-svg {
+    height: 30px !important;
+    width: 30px !important;
+    background: #fff !important;
+    color: black;
+    border-radius: 100%;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .testimonial_mySwiper {
+    height: 480px !important;
+  }
+
+  .image-gallery-thumbnails {
+    padding: 12px 0 !important;
+  }
+  .image-gallery-thumbnail .image-gallery-thumbnail-image,
+  .blur_thumb {
+    height: 40px !important;
+  }
+  .react-international-phone-country-selector-dropdown {
+    margin-top: 18px !important;
+    width: 308px !important;
+  }
+  .project_title {
+    display: inline;
+  }
+  .custom-content-container {
+    font-size: 16px; /* Adjust this value as needed */
+  }
+
+  .custom-content-container h1 {
+    font-size: 24px;
+  }
+
+  .custom-content-container h2 {
+    font-size: 18px;
+    padding: 8px 0 !important;
+  }
+
+  .custom-content-container h3 {
+    font-size: 18px;
+  }
+  .custom-content-container p {
+    padding: 25px 0 !important;
+  }
+
+  /* Add more selectors as needed */
+
+  .custom-content-container [style*="font-size:"] {
+    font-size: inherit !important;
+  }
+  .ql-editor .ql-indent-2:not(.ql-direction-rtl) {
+    padding-left: 0 !important;
+  }
+  /* combo */
+  .combo_mySwiper {
+    height: 100% !important;
+  }
+
+  .pricing_bg {
+    background-image: url("/assets/pricingBg.png");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin-top: 120px;
+  }
+  .comboDeals {
+    background-image: url("/assets/comboDeals.jpg");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: inherit;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .combo_hero {
+    background-image: url("/assets/comboHerosm.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed from 'center' to 'cover' for full stretching */
+    background-position: center;
+    position: relative; /* Added to ensure proper z-index stacking */
+    z-index: 1; /* Adjusted z-index to ensure content is above background */
+    height: 1100px;
+    width: 100%;
+    overflow: hidden; /* Prevent any overflow */
+  }
+  .containerStats {
+    background-size: cover;
+  }
+  .pricing_bg {
+    margin-top: 10px !important;
+  }
+  .contactusbg {
+    background-image: none;
+    background: #051a71;
+    height: 100%;
+    width: 100%;
+  }
+  .pricing_bg {
+    display: none;
+  }
+  .pricing_bg_blue {
+    display: none;
+  }
+  .project_title {
+    display: block;
+  }
+  .app_contact {
+    background-image: none;
+    background: #051660;
+    height: 100%;
+    width: 100%;
+  }
+  .bgheroBlur {
+    background-image: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    width: 300px;
+    height: 500px;
+    flex-shrink: 0;
+  }
+  .app_heroSection {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #001656;
+  }
+  .engine {
+    background-image: url("/assets/enginen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: 46%;
+    bottom: -34%;
+    width: 20%; /* Adjust size as needed */
+    height: 100%;
+    z-index: 0;
+    animation: spin 8s linear infinite; /* Adjust duration for speed */
+  }
+  .businessConsultingHero {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+  .all-offer-section2 {
+    background: #03165f;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure it covers the entire section */
+    position: relative; /* Ensure proper layering */
+    z-index: 0; /* Lower z-index to ensure other elements are on top */
+    width: 100%;
+  }
+
+  .all-offer-section2 img {
+    position: absolute; /* Position the image absolutely */
+    top: 7.5%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Adjust for image size to perfectly center */
+    z-index: -1; /* Ensure it stays behind content */
+  }
+
+  .sales_video {
+    background-image: url("/assets/sales_video.jpg");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -11;
+    height: 100%;
+    width: 100%;
+  }
+
+  .SaleClients_Section {
+    background-image: url("/assets/SaleClients_Section.jpg");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -11;
+    height: 100%;
+    width: 100%;
+  }
+  .websiteComboOffer {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -11;
+    height: 100%;
+    width: 100%;
+    background: #11297e;
+  }
+  .salesAllOne {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: 11;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #051761;
+  }
+  .client_mySwiper {
+    height: 100% !important;
+  }
+  .sales_hero1 {
+    height: 850px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .combo_hero {
+    background-image: url("/assets/comboHerosm.png");
+    height: auto; /* Allow height to adjust to content */
+    min-height: 100vh; /* Ensure it covers full viewport height on mobile */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .bgheroBlur {
+    background-image: url("/assets/bgheroBlursm.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center;
+    position: relative; /* For stacking content properly */
+    z-index: 1; /* Make sure content is above background */
+    height: 422px;
+    width: 239px;
+    overflow: visible; /* Ensure content can overflow outside the box */
+  }
+  .app_contact {
+    height: 100%;
+  }
+  /* .businessTransformBgSm {
+    background-image: url("/assets/businessTransformSm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 740px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 15px;
+  } */
+
+  .sales_hero1 {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .pricing_bg {
+    margin-top: 10px !important;
+  }
+  .custom-content-container h2 {
+    font-size: 18px !important;
+    padding: 0 0 !important;
+  }
+
+  .containerStats {
+    background-size: cover;
+  }
+  .service_section {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    z-index: -1;
+    width: 100%;
+  }
+  .login_singUp {
+    background-image: none;
+  }
+  .ql-editor p {
+    padding: 2px 0 !important;
+  }
+  .ql-editor ol li:not(.ql-direction-rtl),
+  .ql-editor ul li:not(.ql-direction-rtl) {
+    padding-left: 0.5em !important;
+  }
+  .contactusbg {
+    background-image: none;
+    background: #051a71;
+    height: 100%;
+    width: 100%;
+  }
+}
